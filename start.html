@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deus Forma | Старт</title>
+  <meta name="description" content="Оставь короткую анкету перед стартом, чтобы зафиксировать цель, текущую форму, опыт и формат работы.">
+  <meta name="theme-color" content="#050507">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="nav">
+    <a class="brand" href="index.html">Deus Forma</a>
+    <nav class="nav-links" aria-label="Навигация">
+      <a href="method.html">Метод</a>
+      <a href="training.html">Тренировки</a>
+      <a href="nutrition.html">Питание</a>
+      <a href="tariffs.html">Тарифы</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <a class="nav-cta" href="#application">Анкета</a>
+  </header>
+
+  <main class="site" id="main">
+    <section class="subpage split start-page">
+      <div class="copy reveal">
+        <p class="eyebrow">Futurum</p>
+        <h1>Не откладывай то, что может изменить твою форму</h1>
+        <p>Заполни короткую анкету, чтобы зафиксировать цель, текущую форму, опыт, питание и первый маршрут к телу, которое выглядит как результат дисциплины.</p>
+        <a class="button" href="#application">Перейти к анкете</a>
+      </div>
+      <figure class="god-frame static-god reveal">
+        <img src="assets/god-david-florence.jpg" alt="Давид Микеланджело как символ идеальной формы" loading="lazy" decoding="async">
+      </figure>
+    </section>
+
+    <section class="cards application-grid reveal" id="application">
+      <article class="application-copy">
+        <span>Initium</span>
+        <h2>Анкета перед стартом</h2>
+        <p>Чем точнее исходные данные, тем быстрее можно собрать рабочую систему без случайных решений.</p>
+        <ul class="bullet-list">
+          <li>Цель на ближайшие 8–12 недель.</li>
+          <li>Текущий опыт в зале или дома.</li>
+          <li>Ограничения по времени, питанию и режиму.</li>
+          <li>Контакт, по которому удобно продолжить разговор.</li>
+        </ul>
+      </article>
+
+      <article class="application-form-card">
+        <span>Forma</span>
+        <form id="application-form" class="application-form">
+          <label class="field">
+            <span>Имя</span>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Как к тебе обращаться" required>
+          </label>
+
+          <label class="field">
+            <span>Цель</span>
+            <input type="text" id="goal" name="goal" placeholder="Например: набрать мышечную массу и собрать пропорции" required>
+          </label>
+
+          <label class="field">
+            <span>Опыт</span>
+            <select id="experience" name="experience">
+              <option value="">Выбери вариант</option>
+              <option>Новичок</option>
+              <option>Есть базовый опыт</option>
+              <option>Тренируюсь давно, но нужен порядок</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Где планируешь тренироваться</span>
+            <select id="format" name="format">
+              <option value="">Выбери вариант</option>
+              <option>В зале</option>
+              <option>Дома</option>
+              <option>Смешанный формат</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Контакт</span>
+            <input type="text" id="contact" name="contact" autocomplete="off" placeholder="Telegram, телефон или почта" required>
+          </label>
+
+          <label class="field">
+            <span>Детали</span>
+            <textarea id="details" name="details" rows="5" placeholder="Опиши текущую форму, питание, ограничения по времени и все, что важно учесть"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="button ghost" type="button" id="save-draft">Сохранить черновик</button>
+            <button class="button" type="button" id="copy-application">Скопировать заявку</button>
+          </div>
+
+          <p class="status-text" id="form-status" aria-live="polite"></p>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
