@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -14,14 +14,19 @@
 
   <header class="nav">
     <a class="brand" href="index.html">Deus Forma</a>
-    <nav class="nav-links" aria-label="Навигация">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" id="site-nav" aria-label="Навигация">
       <a href="method.html">Метод</a>
       <a href="training.html" aria-current="page">Тренировки</a>
       <a href="nutrition.html">Питание</a>
       <a href="tariffs.html">Тарифы</a>
       <a href="faq.html">FAQ</a>
     </nav>
-    <a class="nav-cta" href="start.html#application">Начать</a>
+    <a class="nav-cta" href="start.html#application">Личный доступ</a>
   </header>
 
   <main class="site" id="main">
@@ -31,7 +36,7 @@
         <h1>Сила строит форму</h1>
         <p>Тренировки направлены на атлетичное телосложение: плечи, грудь, спина, руки, ноги и корпус. Без случайных упражнений и хаотичных программ.</p>
       </div>
-      <figure class="god-frame static-god reveal">
+      <figure class="god-frame static-god static-god--training reveal">
         <img src="assets/training-david-cracked.jpg" alt="Черно-белый образ античной статуи с трещинами как символ силы и дисциплины" loading="lazy" decoding="async">
       </figure>
     </section>
@@ -53,8 +58,32 @@
         <p>Акцент на пропорции, визуальную эстетику, корпус и детализацию.</p>
       </article>
     </section>
+    <section class="journey-nav reveal">
+      <div class="journey-head">
+        <p class="eyebrow">Flow</p>
+        <h2>Укрепи систему дальше</h2>
+      </div>
+      <div class="journey-grid">
+        <a class="journey-card" href="nutrition.html">
+          <span>Восстановление</span>
+          <strong>Питание</strong>
+          <p>Подключи рацион, чтобы тренировки давали не усталость, а форму.</p>
+        </a>
+        <a class="journey-card" href="tariffs.html">
+          <span>Формат работы</span>
+          <strong>Тарифы</strong>
+          <p>Выбери глубину сопровождения и подходящий формат маршрута.</p>
+        </a>
+        <a class="journey-card journey-card--accent" href="start.html#application">
+          <span>Личный доступ</span>
+          <strong>Перейти к заявке</strong>
+          <p>Оставь анкету и собери систему под свои задачи и уровень.</p>
+        </a>
+      </div>
+    </section>
   </main>
 
   <script src="script.js"></script>
 </body>
 </html>
+

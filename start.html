@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -14,14 +14,19 @@
 
   <header class="nav">
     <a class="brand" href="index.html">Deus Forma</a>
-    <nav class="nav-links" aria-label="Навигация">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" id="site-nav" aria-label="Навигация">
       <a href="method.html">Метод</a>
       <a href="training.html">Тренировки</a>
       <a href="nutrition.html">Питание</a>
       <a href="tariffs.html">Тарифы</a>
       <a href="faq.html">FAQ</a>
     </nav>
-    <a class="nav-cta" href="#application">Анкета</a>
+    <a class="nav-cta" href="#application">Личный доступ</a>
   </header>
 
   <main class="site" id="main">
@@ -102,8 +107,32 @@
         </form>
       </article>
     </section>
+    <section class="journey-nav reveal">
+      <div class="journey-head">
+        <p class="eyebrow">Navigation</p>
+        <h2>Нужно еще посмотреть детали перед заявкой?</h2>
+      </div>
+      <div class="journey-grid">
+        <a class="journey-card" href="method.html">
+          <span>Логика системы</span>
+          <strong>Метод</strong>
+          <p>Вернись к архитектуре курса и общей логике работы над формой.</p>
+        </a>
+        <a class="journey-card" href="training.html">
+          <span>Силовой блок</span>
+          <strong>Тренировки</strong>
+          <p>Посмотри, как устроена тренировочная часть маршрута.</p>
+        </a>
+        <a class="journey-card" href="tariffs.html">
+          <span>Формат входа</span>
+          <strong>Тарифы</strong>
+          <p>Сравни варианты сопровождения и выбери комфортную глубину.</p>
+        </a>
+      </div>
+    </section>
   </main>
 
   <script src="script.js"></script>
 </body>
 </html>
+

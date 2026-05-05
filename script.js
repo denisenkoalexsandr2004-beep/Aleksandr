@@ -1,6 +1,9 @@
 const root = document.documentElement;
 const revealItems = document.querySelectorAll(".reveal, .intro-grid article, .cards article, .timeline article, .faq-list article");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const nav = document.querySelector(".nav");
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
 
 function clamp(value, min, max) {
   return Math.min(max, Math.max(min, value));
@@ -46,6 +49,35 @@ if (!prefersReducedMotion && "IntersectionObserver" in window) {
 window.addEventListener("scroll", updateProgress, { passive: true });
 window.addEventListener("resize", updateProgress);
 updateProgress();
+
+if (nav && navToggle && navLinks) {
+  const openLabel = "Открыть меню";
+  const closeLabel = "Закрыть меню";
+
+  const closeNav = () => {
+    nav.classList.remove("is-open");
+    document.body.classList.remove("nav-open");
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.setAttribute("aria-label", openLabel);
+  };
+
+  navToggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("is-open");
+    document.body.classList.toggle("nav-open", isOpen);
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+    navToggle.setAttribute("aria-label", isOpen ? closeLabel : openLabel);
+  });
+
+  for (const link of navLinks.querySelectorAll("a")) {
+    link.addEventListener("click", closeNav);
+  }
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 720) {
+      closeNav();
+    }
+  });
+}
 
 const form = document.getElementById("application-form");
 const saveDraftButton = document.getElementById("save-draft");

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -14,14 +14,19 @@
 
   <header class="nav">
     <a class="brand" href="index.html">Deus Forma</a>
-    <nav class="nav-links" aria-label="Навигация">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" id="site-nav" aria-label="Навигация">
       <a href="method.html" aria-current="page">Метод</a>
       <a href="training.html">Тренировки</a>
       <a href="nutrition.html">Питание</a>
       <a href="tariffs.html">Тарифы</a>
       <a href="faq.html">FAQ</a>
     </nav>
-    <a class="nav-cta" href="start.html#application">Начать</a>
+    <a class="nav-cta" href="start.html#application">Личный доступ</a>
   </header>
 
   <main class="site" id="main">
@@ -32,7 +37,7 @@
         <p>Тело вытачивается повторением. Мой метод соединяет силовую работу, питание, восстановление и контроль прогресса в одну систему.</p>
       </div>
       <figure class="god-frame static-god reveal">
-        <img src="assets/god-david-hero-v2.jpg" alt="Мраморная статуя как символ собранной формы" loading="lazy" decoding="async">
+        <img src="assets/god-david.jpg" alt="Мраморная статуя как символ собранной формы" loading="lazy" decoding="async">
       </figure>
     </section>
 
@@ -53,8 +58,32 @@
         <p>Система построена так, чтобы ты не начинал заново каждый понедельник.</p>
       </article>
     </section>
+    <section class="journey-nav reveal">
+      <div class="journey-head">
+        <p class="eyebrow">Маршрут</p>
+        <h2>Продолжай движение по системе</h2>
+      </div>
+      <div class="journey-grid">
+        <a class="journey-card" href="training.html">
+          <span>Следующий шаг</span>
+          <strong>Тренировки</strong>
+          <p>Перейди к силовой структуре и сборке атлетичной формы.</p>
+        </a>
+        <a class="journey-card" href="nutrition.html">
+          <span>Поддержка формы</span>
+          <strong>Питание</strong>
+          <p>Посмотри, как рацион удерживает результат и восстановление.</p>
+        </a>
+        <a class="journey-card journey-card--accent" href="start.html#application">
+          <span>Личный доступ</span>
+          <strong>Оставить заявку</strong>
+          <p>Зафиксируй цель и получи маршрут под свою форму и режим.</p>
+        </a>
+      </div>
+    </section>
   </main>
 
   <script src="script.js"></script>
 </body>
 </html>
+

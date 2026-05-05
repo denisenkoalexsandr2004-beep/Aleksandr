@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -14,14 +14,19 @@
 
   <header class="nav">
     <a class="brand" href="index.html">Deus Forma</a>
-    <nav class="nav-links" aria-label="Навигация">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" id="site-nav" aria-label="Навигация">
       <a href="method.html">Метод</a>
       <a href="training.html">Тренировки</a>
       <a href="nutrition.html" aria-current="page">Питание</a>
       <a href="tariffs.html">Тарифы</a>
       <a href="faq.html">FAQ</a>
     </nav>
-    <a class="nav-cta" href="start.html#application">Начать</a>
+    <a class="nav-cta" href="start.html#application">Личный доступ</a>
   </header>
 
   <main class="site" id="main">
@@ -31,8 +36,8 @@
         <h1>Питание — материал для тела</h1>
         <p>Без еды тело не строится. Рацион в курсе не про жесткие запреты, а про контроль, белок, энергию и стабильность.</p>
       </div>
-      <figure class="god-frame static-god reveal">
-        <img src="assets/god-david-florence.jpg" alt="Давид как символ пропорций" loading="lazy" decoding="async">
+      <figure class="god-frame static-god static-god--nutrition reveal">
+        <img src="assets/nutrition-roman-feast.jpg" alt="Античная трапеза как образ дисциплины, изобилия и культуры питания" loading="lazy" decoding="async">
       </figure>
     </section>
 
@@ -53,8 +58,32 @@
         <p>Без фанатизма: питание должно помогать жить, тренироваться и держать форму.</p>
       </article>
     </section>
+    <section class="journey-nav reveal">
+      <div class="journey-head">
+        <p class="eyebrow">Continuum</p>
+        <h2>Собери весь контур результата</h2>
+      </div>
+      <div class="journey-grid">
+        <a class="journey-card" href="training.html">
+          <span>Силовой блок</span>
+          <strong>Тренировки</strong>
+          <p>Вернись к блоку нагрузок и собери структуру под атлетичную форму.</p>
+        </a>
+        <a class="journey-card" href="faq.html">
+          <span>Перед стартом</span>
+          <strong>FAQ</strong>
+          <p>Сними оставшиеся вопросы перед тем, как перейти к анкете.</p>
+        </a>
+        <a class="journey-card journey-card--accent" href="start.html#application">
+          <span>Личный доступ</span>
+          <strong>Заполнить анкету</strong>
+          <p>Перейди к заявке прямо отсюда и зафиксируй свой старт.</p>
+        </a>
+      </div>
+    </section>
   </main>
 
   <script src="script.js"></script>
 </body>
 </html>
+

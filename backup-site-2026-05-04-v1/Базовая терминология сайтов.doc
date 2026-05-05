@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Базовая терминология сайтов</title>
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 48px;
+      color: #111;
+      line-height: 1.45;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 6px 0;
+    }
+
+    .muted {
+      color: #666;
+      margin-bottom: 24px;
+    }
+
+    .term {
+      margin-bottom: 12px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Базовая терминология для создания сайтов</h1>
+  <p class="muted">Шпаргалка для повторения простыми словами</p>
+
+  <h2>Главное правило</h2>
+  <p><strong>HTML</strong> — что находится на странице.</p>
+  <p><strong>CSS</strong> — как это выглядит.</p>
+  <p><strong>JavaScript</strong> — как это двигается и реагирует.</p>
+  <p><strong>Assets</strong> — картинки, видео, иконки и другие материалы.</p>
+  <p><strong>Хостинг</strong> — место, где сайт живет в интернете.</p>
+  <p><strong>Домен</strong> — красивый адрес сайта.</p>
+
+  <h2>Основные понятия</h2>
+
+  <p class="term"><strong>Сайт</strong> — вся “книга” целиком. Например, Deus Forma — это сайт.</p>
+  <p class="term"><strong>Страница</strong> — один отдельный документ сайта. Например: index.html, method.html, nutrition.html.</p>
+  <p class="term"><strong>HTML</strong> — скелет страницы. Он говорит браузеру: тут заголовок, тут текст, тут картинка, тут кнопка.</p>
+  <p class="term"><strong>CSS</strong> — внешний вид сайта: цвета, размеры, шрифты, отступы, расположение элементов.</p>
+  <p class="term"><strong>JavaScript</strong> — поведение сайта: анимации, клики, появление элементов, интерактив.</p>
+  <p class="term"><strong>Файл</strong> — один документ на компьютере. Например: index.html, style.css, script.js.</p>
+  <p class="term"><strong>Папка</strong> — место, где лежат файлы сайта.</p>
+  <p class="term"><strong>Assets</strong> — материалы сайта: картинки, видео, иконки, шрифты.</p>
+  <p class="term"><strong>Главная страница</strong> — первая страница сайта. Обычно называется index.html.</p>
+  <p class="term"><strong>Навигация</strong> — меню сайта. Например: Метод, Тренировки, Питание, Тарифы, FAQ.</p>
+  <p class="term"><strong>Header</strong> — верхняя часть сайта. Обычно там логотип, меню и кнопка.</p>
+  <p class="term"><strong>Hero-блок</strong> — самый первый главный экран сайта. Там обычно большой заголовок, красивый визуал и кнопка.</p>
+  <p class="term"><strong>CTA</strong> — Call To Action, то есть призыв к действию. Например: “Войти в мастерскую”, “Начать путь”, “Оставить заявку”.</p>
+  <p class="term"><strong>Landing page</strong> — одностраничный сайт, который продает одну идею, продукт или услугу.</p>
+  <p class="term"><strong>Многостраничный сайт</strong> — сайт, где есть несколько страниц: Главная, Метод, Питание, Тренировки, Тарифы, FAQ.</p>
+  <p class="term"><strong>Блок или секция</strong> — отдельный кусок страницы: первый экран, блок про метод, блок с тарифами.</p>
+  <p class="term"><strong>Карточка</strong> — небольшой отдельный прямоугольный блок с информацией. Например карточка тарифа или преимущества.</p>
+  <p class="term"><strong>Адаптив</strong> — когда сайт нормально выглядит и на компьютере, и на телефоне.</p>
+  <p class="term"><strong>Хостинг</strong> — место в интернете, где лежит сайт, чтобы другие могли открыть его по ссылке.</p>
+  <p class="term"><strong>Домен</strong> — имя сайта. Например: deusforma.ru, google.com, youtube.com.</p>
+  <p class="term"><strong>Ссылка или URL</strong> — адрес страницы в интернете.</p>
+  <p class="term"><strong>Frontend</strong> — то, что видит пользователь: дизайн, кнопки, страницы, анимации.</p>
+  <p class="term"><strong>Backend</strong> — невидимая часть сайта: сервер, база данных, регистрация, оплата, личный кабинет.</p>
+
+  <h2>Очень простая аналогия</h2>
+  <p><strong>HTML</strong> — кости.</p>
+  <p><strong>CSS</strong> — кожа и одежда.</p>
+  <p><strong>JavaScript</strong> — мышцы.</p>
+  <p><strong>Assets</strong> — фотографии и украшения.</p>
+  <p><strong>Хостинг</strong> — дом, где сайт живет.</p>
+  <p><strong>Домен</strong> — адрес этого дома.</p>
+
+  <h2>Как запомнить по твоему сайту</h2>
+  <p><strong>index.html</strong> — главная страница.</p>
+  <p><strong>method.html</strong> — страница метода.</p>
+  <p><strong>training.html</strong> — страница тренировок.</p>
+  <p><strong>nutrition.html</strong> — страница питания.</p>
+  <p><strong>tariffs.html</strong> — страница тарифов.</p>
+  <p><strong>faq.html</strong> — вопросы и ответы.</p>
+  <p><strong>start.html</strong> — страница заявки.</p>
+  <p><strong>style.css</strong> — общий внешний вид всего сайта.</p>
+  <p><strong>script.js</strong> — анимации и интерактив.</p>
+  <p><strong>assets</strong> — папка с картинками.</p>
+</body>
+</html>
