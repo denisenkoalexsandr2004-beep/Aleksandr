@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deus Forma | Кабинет</title>
+  <meta name="description" content="Личный кабинет клиента Deus Forma.">
+  <meta name="theme-color" content="#050507">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="nav">
+    <a class="brand" href="index.html">Deus Forma</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" id="site-nav" aria-label="Навигация">
+      <a href="method.html">Метод</a>
+      <a href="training.html">Тренировки</a>
+      <a href="nutrition.html">Питание</a>
+      <a href="tariffs.html">Тарифы</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <button class="nav-cta nav-cta-button" type="button" id="account-logout">Выйти</button>
+  </header>
+
+  <main class="site" id="main">
+    <section class="subpage account-shell">
+      <div class="account-hero reveal">
+        <p class="eyebrow">Cabinet</p>
+        <h1 id="account-title">Личный кабинет клиента</h1>
+        <p id="account-subtitle">Здесь будет твой текущий маршрут, статус сопровождения и рабочие ориентиры.</p>
+      </div>
+
+      <section class="account-grid reveal">
+        <article class="account-card account-card--primary">
+          <span>Профиль</span>
+          <h2 id="profile-name">Клиент Deus Forma</h2>
+          <p id="profile-email">Подключи Supabase, чтобы кабинет стал персональным.</p>
+        </article>
+
+        <article class="account-card">
+          <span>Статус</span>
+          <h2 id="profile-status">MVP</h2>
+          <p id="profile-status-note">После подключения базы здесь будет текущий этап работы.</p>
+        </article>
+
+        <article class="account-card">
+          <span>Цель</span>
+          <h2 id="profile-goal">Главный фокус</h2>
+          <p id="profile-goal-note">Здесь появится персональная цель клиента.</p>
+        </article>
+
+        <article class="account-card">
+          <span>Формат</span>
+          <h2 id="profile-format">Формат работы</h2>
+          <p id="profile-format-note">Зал, дом или смешанная модель сопровождения.</p>
+        </article>
+
+        <article class="account-card account-card--wide">
+          <span>Заметки</span>
+          <h2>Рабочие ориентиры</h2>
+          <p id="profile-notes">Здесь можно держать короткие указания: на чем сосредоточиться, что проверить на созвоне и какой следующий шаг в системе.</p>
+        </article>
+
+        <article class="account-card account-card--wide">
+          <span>Связь</span>
+          <h2>Контур взаимодействия</h2>
+          <div class="account-actions">
+            <a class="button" id="profile-contact-link" href="start.html">Перейти к анкете</a>
+            <a class="button ghost" href="login.html">Управление доступом</a>
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deus Forma | Вход</title>
+  <meta name="description" content="Личный вход в кабинет клиента Deus Forma.">
+  <meta name="theme-color" content="#050507">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="nav">
+    <a class="brand" href="index.html">Deus Forma</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" id="site-nav" aria-label="Навигация">
+      <a href="method.html">Метод</a>
+      <a href="training.html">Тренировки</a>
+      <a href="nutrition.html">Питание</a>
+      <a href="tariffs.html">Тарифы</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <a class="nav-cta" href="account.html">Кабинет</a>
+  </header>
+
+  <main class="site" id="main">
+    <section class="subpage auth-shell">
+      <div class="auth-copy reveal">
+        <p class="eyebrow">Accessus</p>
+        <h1>Личный вход в систему</h1>
+        <p>Здесь клиент видит статус, ориентиры по цели, формат сопровождения и рабочие заметки по маршруту.</p>
+        <div class="auth-notes">
+          <div>
+            <span>01</span>
+            <strong>Статус сопровождения</strong>
+            <p>Новая заявка, старт, активная работа и следующие шаги.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <strong>Фокус по цели</strong>
+            <p>Что собираем прямо сейчас и какой приоритет держим.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <strong>Быстрая связь</strong>
+            <p>Контакты и прямой переход к дальнейшему взаимодействию.</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="auth-panel reveal" aria-labelledby="auth-title">
+        <div class="auth-panel-head">
+          <p class="eyebrow">Private access</p>
+          <h2 id="auth-title">Вход и выдача доступа</h2>
+          <p>Для MVP-версии уже достаточно email и пароля. После подключения Supabase кабинет станет живым.</p>
+        </div>
+
+        <form id="auth-form" class="application-form auth-form">
+          <label class="field">
+            <span>Email</span>
+            <input type="email" id="auth-email" name="email" placeholder="client@example.com" autocomplete="email" required>
+          </label>
+
+          <label class="field">
+            <span>Пароль</span>
+            <input type="password" id="auth-password" name="password" placeholder="Не короче 6 символов" autocomplete="current-password" required>
+          </label>
+
+          <div class="auth-actions">
+            <button class="button" type="submit" id="auth-login">Войти</button>
+            <button class="button ghost" type="button" id="auth-signup">Выдать доступ</button>
+          </div>
+
+          <p class="status-text" id="auth-status" aria-live="polite"></p>
+        </form>
+
+        <div class="client-entry-note">
+          <p>Новый клиент сначала оставляет заявку, а затем ты создаешь ему доступ в кабинет через этот экран.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
