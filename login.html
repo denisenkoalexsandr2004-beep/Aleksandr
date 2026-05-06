@@ -31,25 +31,16 @@
 
   <main class="site" id="main">
     <section class="subpage auth-shell">
-      <div class="auth-copy reveal">
-        <p class="eyebrow">Accessus</p>
-        <h1>Личный вход в систему</h1>
-        <p>Здесь клиент видит статус, ориентиры по цели, формат сопровождения и рабочие заметки по маршруту.</p>
-        <div class="auth-notes">
-          <div>
-            <span>01</span>
-            <strong>Статус сопровождения</strong>
-            <p>Новая заявка, старт, активная работа и следующие шаги.</p>
-          </div>
-          <div>
-            <span>02</span>
-            <strong>Фокус по цели</strong>
-            <p>Что собираем прямо сейчас и какой приоритет держим.</p>
-          </div>
-          <div>
-            <span>03</span>
-            <strong>Быстрая связь</strong>
-            <p>Контакты и прямой переход к дальнейшему взаимодействию.</p>
+      <div class="auth-copy auth-visual reveal">
+        <div class="auth-visual-frame auth-visual-frame--minimal">
+          <p class="eyebrow">New client</p>
+          <h1>Получить доступ</h1>
+          <p>Сначала заполни заявку. После подтверждения сопровождения тебе откроется личный кабинет.</p>
+          <a class="button auth-application-link" href="start.html#application">Перейти к анкете</a>
+          <div class="auth-visual-tags" aria-hidden="true">
+            <span>Анкета</span>
+            <span>Подтверждение</span>
+            <span>Доступ</span>
           </div>
         </div>
       </div>
@@ -57,8 +48,8 @@
       <section class="auth-panel reveal" aria-labelledby="auth-title">
         <div class="auth-panel-head">
           <p class="eyebrow">Private access</p>
-          <h2 id="auth-title">Вход и выдача доступа</h2>
-          <p>Для MVP-версии уже достаточно email и пароля. После подключения Supabase кабинет станет живым.</p>
+          <h2 id="auth-title">Войти в личный кабинет</h2>
+          <p>Если доступ уже выдан, войди по email и паролю.</p>
         </div>
 
         <form id="auth-form" class="application-form auth-form">
@@ -74,15 +65,20 @@
 
           <div class="auth-actions">
             <button class="button" type="submit" id="auth-login">Войти</button>
-            <button class="button ghost" type="button" id="auth-signup">Выдать доступ</button>
           </div>
 
           <p class="status-text" id="auth-status" aria-live="polite"></p>
         </form>
 
         <div class="client-entry-note">
-          <p>Новый клиент сначала оставляет заявку, а затем ты создаешь ему доступ в кабинет через этот экран.</p>
+          <p>Нет доступа? Сначала оставь заявку.</p>
         </div>
+
+        <details class="admin-access">
+          <summary>Режим администратора</summary>
+          <p>После заявки доступ выдается через email и пароль клиента.</p>
+          <button class="button ghost" type="button" id="auth-signup">Выдать доступ клиенту</button>
+        </details>
       </section>
     </section>
   </main>

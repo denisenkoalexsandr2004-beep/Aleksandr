@@ -122,7 +122,34 @@ async function handleLogout() {
 }
 
 async function hydrateAccount() {
-  if (!document.body || !document.body.contains(document.getElementById("account-title"))) {
+  const isAccountPage = document.body && document.body.contains(document.getElementById("account-title"));
+  const isLoginPage = document.body && document.body.contains(document.getElementById("auth-form"));
+
+  if (!isAccountPage && !isLoginPage) {
+    return;
+  }
+
+  if (!supabaseClient) {
+    if (isAccountPage) {
+      const subtitle = document.getElementById("account-subtitle");
+      subtitle.textContent = "Подключи Supabase в auth.js, и этот кабинет станет персональным.";
+    }
+    return;
+  }
+
+  const {
+    data: { session },
+  } = await supabaseClient.auth.getSession();
+
+  if (isLoginPage && session) {
+    window.location.href = "account.html";
+    return;
+  }
+
+  if (!session) {
+    if (isAccountPage) {
+      window.location.href = "login.html";
+    }
     return;
   }
 
@@ -138,20 +165,6 @@ async function hydrateAccount() {
   const formatNoteNode = document.getElementById("profile-format-note");
   const notesNode = document.getElementById("profile-notes");
   const contactLink = document.getElementById("profile-contact-link");
-
-  if (!supabaseClient) {
-    subtitle.textContent = "Подключи Supabase в auth.js, и этот кабинет станет персональным.";
-    return;
-  }
-
-  const {
-    data: { session },
-  } = await supabaseClient.auth.getSession();
-
-  if (!session) {
-    window.location.href = "login.html";
-    return;
-  }
 
   const user = session.user;
   const email = user.email || "";
